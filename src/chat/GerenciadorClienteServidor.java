@@ -53,7 +53,8 @@ public class GerenciadorClienteServidor extends Thread {
                 // protocolo: comando para sair:: sair    
                 if (msg.equalsIgnoreCase("SAIR")) {
                     this.cliente.close();
-                } else if (msg.toLowerCase().startsWith("msg:")) {
+                    System.out.println("Fechando a conexão!");
+                } else if (msg.toLowerCase().startsWith(":msg")) {
                     String nomeDestinatario = msg.substring(4, msg.length());
                     System.out.println("enviando para " + nomeDestinatario);
                     GerenciadorClienteServidor destinatario = clientes.get(nomeDestinatario);

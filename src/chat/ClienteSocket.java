@@ -58,7 +58,7 @@ public class ClienteSocket {
                     continue;
                 }
                 escritor.println(mensagemTerminal);
-                if (mensagemTerminal.equalsIgnoreCase(":sair")) {
+                if (mensagemTerminal.equalsIgnoreCase("sair")) {
                     System.out.println("Fechando o cliente!");
                     System.exit(0);
                 }
