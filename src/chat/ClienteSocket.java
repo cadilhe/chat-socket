@@ -18,7 +18,7 @@ public class ClienteSocket {
 
         try {
 
-           final Socket cliente = new Socket("127.0.0.1", 2424);
+            final Socket cliente = new Socket("127.0.0.1", 2424);
 
             // lendo mensagens do servidor
             new Thread() {
