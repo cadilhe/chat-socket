@@ -1,7 +1,7 @@
 package chat;
 public class Comandos {
 
-	public static final String LISTA_USUARIOS = "lista_usuarios";
+	public static final String LISTA_USUARIOS = "lista_usuarios:";
 	public static final String SAIR = "sair";
 	public static final String MENSAGEM = "mensagem:";
 	public static final String LOGIN = "login:";

@@ -48,13 +48,13 @@ public class ClienteSocket {
 					continue;
 				}
 				escritor.println(mensagemTerminal);
-				if(mensagemTerminal.equalsIgnoreCase("::SAIR")){
+				if(mensagemTerminal.equalsIgnoreCase("SAIR")){
 					System.exit(0);
 				}
 			}
 			
 		} catch (UnknownHostException e) {
-			System.out.println("o endereÃ§o passado Ã© invÃ¡lido");
+			System.out.println("o endereço passado é inválido");
 			e.printStackTrace();
 		} catch (IOException e) {
 			System.out.println("o servidor pode estar fora ar");

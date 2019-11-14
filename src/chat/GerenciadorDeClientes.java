@@ -93,10 +93,9 @@ public class GerenciadorDeClientes extends Thread {
 		StringBuffer str = new StringBuffer();
 		for(String c: clientes.keySet()){
 			if(cliente.getNomeCliente().equals(c))
-				continue;
-			
+				continue;			
 			str.append(c);
-			str.append(",");
+			str.append(";");
 		}
 		if(str.length() > 0)
 			str.delete(str.length()-1, str.length());
